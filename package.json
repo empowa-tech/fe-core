@@ -1,0 +1,21 @@
+{
+  "name": "@empowa-tech/styles",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A library that holds shared styles and theming",
+  "author": "Senny Kalidien <senny@sennify.com>",
+  "license": "UNLICENSED",
+  "repository": "https://github.com/empowa-tech/frontend",
+  "main": "index.ts",
+  "scripts": {
+    "build": "style-dictionary build -c sd-config.js",
+    "build:demo": "style-dictionary build -c sd-config.js",
+    "postinstall": "yarn build",
+    "test": "exit 0"
+  },
+  "dependencies": {
+    "@mui/material": "^5.14.12",
+    "@mui/system": "^5.8.0",
+    "style-dictionary": "^3.7.0"
+  }
+}
